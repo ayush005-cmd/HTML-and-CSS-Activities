@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week10</title>
+    <style>
+        #div1{
+            padding: 0px 0px 0px 0px;
+            width: 100%;
+        }
+        #div11{
+            background-color: rgb(48, 48, 48);
+            width: 100%;
+            padding-top: 6px;
+            padding-bottom: 10px;
+        }
+        #div111{
+            background-color: rgb(198, 198, 198);
+            margin-left: 40px;
+            margin-right:40px ;
+            text-align: center;
+            padding: 4px;
+        }
+        #sp1{
+            color: Blue;
+            font-size: large;
+        }
+        #sp2{
+            font-size: smaller;
+            color: blue;
+        }
+        #div12{
+            text-align: center;
+            color: black;
+            background-color:rgb(95, 95, 95) ;
+            width: 100%;
+
+        }
+        #sp3{
+            color: black;
+            word-spacing: 6px;
+        }
+        #div2{
+            color: rgb(255, 159, 175);
+            padding: 16px 40px 4px 40px;
+        }
+        #div21{
+            border: solid 2px  rgb(197, 196, 196);
+            padding-left: 14px;
+            margin-bottom: 4px;
+        }
+        #div212{
+            border: solid 2px  rgb(197, 196, 196);
+            padding-left: 14px;
+        }
+        #t1{
+            border-color:  grey ;
+            width: 100%;
+            
+        }
+        #tr1{
+            background-color: rgb(171, 171, 171) ;
+        }
+        input[type="text"],input[type="email"]{
+            width: 100%;
+        }
+        #div22{
+            padding :0px;
+            margin: 0px;
+        }
+        #div221{
+            text-align: center;
+            font-size: large;
+        }
+        #div23{
+            width: 100%;
+            border: solid 2px rgb(255, 159, 175);
+            padding: 4px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 4px 0px;
+            background-color: rgb(25, 25, 25);
+            border-radius: 4px;
+            color: white;
+        }
+        #div3{
+            padding: 8px 30px;
+            background-color: rgb(98, 98, 98);
+
+        }
+        #div31{
+            text-align: center;
+            color: blue;
+            font-size: smaller;
+            padding: 10px ;
+            background-color: rgb(225, 225, 225);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div11">
+            <div id="div111">
+                <span id="sp1"> <strong>Riwick Smith</strong></span><br> <span id="sp2">Web Developer & Designer</span>
+            </div>
+        </div>
+        <div id="div12">
+            <span id="sp3">About Projects Contacts</span>
+        </div>
+    </div>
+    <div id="div2"> 
+        <h2>About Me</h2>
+        <p> Hello I'm Riwick Smith, a passionate web developer with a love for creating beautiful and functional websites. I have experience in html , css , javascript and more</p>
+        <br>
+        <h2>My Projects</h2>
+        <div id="div21">
+            <h2> Project 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div id="div212">
+            <h2> Project 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <br>
+        <div id="div22">
+            <div id="div221" > <b>Project Statistics</b></div>
+            <div>
+                <table border="2px" id="t1">
+                    <tr id="tr1">
+                        <th>Project</th>
+                        <th>Technologies</th>
+                        <th>Completion Date</th>
+
+                    </tr>
+                    <tr>
+                        <td>Project1</td>
+                        <td>HTML,CSS,Javascript</td>
+                        <td>June 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Project2</td>
+                        <td>React , Node JS</td>
+                        <td>August 2024</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h2>
+            Contact Me
+        </h2>
+        <form action="datastore.php">
+            <label for="qwerty">Name</label><br>
+            <input type="text" id="qwerty"><br>
+            <label for="asdfg">Email</label><br>
+            <input type="email" id="asdfg"><br> <br>
+            <div id="div23">
+                <label for="check" id="check" name="check">Preferred Contact Method</label> <br>
+                Email<input type="radio" id="check" name="check">
+                Phone<input type="radio" id="check" name="check">
+            </div>
+            <input type="checkbox" value="Subscribe to Newsletter" id="checker" name="checker"> Subscribe to our newsletter <br>
+            <input type="submit" value="Send">  
+        </form>
+
+    </div>
+    <div id="div3">
+        <div id="div31">
+            <span> &copy; Riwick Smith , All rights Reserved.</span>
+
+        </div>
+
+    </div>
+</body>
+</html>

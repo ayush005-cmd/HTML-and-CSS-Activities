@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week6activity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "logo top-nav top-nav"
+                "sidebar search-bar search-bar "
+                "sidebar content content"
+                "footer footer footer";
+            grid-template-columns: 200px  ;
+            grid-template-rows:  1fr;
+            gap: 10px;
+            padding: 2px;
+            max-width: 1200px;
+            max-height: 700px;
+            margin: 0px;
+            background-color: white;
+        } 
+
+        /* Logo Section */
+        .logo {
+            grid-area: logo;
+            background-color: #4CAF50;
+            padding:30px;
+            text-align: center;
+            color: black;
+            border: 2px solid black;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            grid-area: search-bar;
+            padding: 2px;
+            
+            align-items: center;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 0px;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            grid-area: top-nav;
+            background-color: #4CAF50;
+            padding: 2px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        
+
+        /* Sidebar Navigation */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: white;
+            padding: 1px;
+            border: 2px solid black;
+
+        }
+
+        .sidebar h2 {
+            margin-top: 110px;
+            margin-left: 55px;
+            text-align: bottom;
+            color: black;
+        }
+
+        
+
+        
+
+        /* Content Section */
+        .content {
+            grid-area: content;
+            background-color: #fff;
+            padding: 110px;
+            border: 1px solid #ccc;
+            text-emphasis-position: center;
+            color: black;
+            border: 2px solid black;
+        }
+        .content h1{
+            margin-left: 190px;
+        }
+
+        /* Footer Section */
+        .footer {
+            grid-area: footer;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-left: 210px;
+            margin-right: 2px;
+            border: 2px solid black;
+        }
+        .box {
+            padding: 20px;
+            margin: 70px;
+            width: 1000px;            
+            height: 800px;           
+            
+            border: 2px solid black;   
+                            
+            color: transparent;              
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Top Navigation -->
+        <div class="top-nav">
+            
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h1>Content</h1>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="footer">
+            <p></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
